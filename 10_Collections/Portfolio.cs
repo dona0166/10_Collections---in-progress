@@ -32,9 +32,31 @@ namespace _10_Collections
 
         }
 
+        List<Asset> alist = new List<Asset>();
         public IList<Asset> GetAssets()
         {
-            
+            return a;
         }
+
+        public string GetAssetByName(string v)
+        {
+            string result = "";
+            foreach (Asset someasset in a)
+            {
+
+                //if ((object)someasset.ToString() == v)
+                //{
+                //    result = someasset.GetType().Name;
+                //}
+                result = someasset.GetType().Name;
+                
+            }
+            return result;
+        }
+
+        //public string GetName(Asset someassetname)
+        //{
+        //    return someassetname.ToString();
+        //}
     }
 }

@@ -52,6 +52,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Asset.cs" />
     <Compile Include="CollectionsTest.cs" />
     <Compile Include="MemoryStockRepositoryTests.cs" />
     <Compile Include="Portfolio.cs" />

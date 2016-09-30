@@ -2,11 +2,7 @@
 
 namespace _10_Collections
 {
-    public interface Asset
-    {
-        double GetValue();
-       
-    }
+    
     public class Stock : Asset
     {
         private string symbol;

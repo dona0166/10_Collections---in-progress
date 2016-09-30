@@ -28,20 +28,20 @@ namespace _10_Collections
             Assert.IsTrue(assets.Contains(stockYHOO));
         }
 
-        //[TestMethod]
-        //public void CanGetAssetByName()
-        //{
-        //    Portfolio portfolio = new Portfolio();
-        //    portfolio.AddAsset(stockIBM);
-        //    portfolio.AddAsset(stockHP);
-        //    portfolio.AddAsset(stockYHOO);
+        [TestMethod]
+        public void CanGetAssetByName()
+        {
+            Portfolio portfolio = new Portfolio();
+            portfolio.AddAsset(stockIBM);
+            portfolio.AddAsset(stockHP);
+            portfolio.AddAsset(stockYHOO);
 
-        //    Assert.AreEqual(stockIBM, portfolio.GetAssetByName("IBM"));
-        //    Assert.AreEqual(stockHP, portfolio.GetAssetByName("HPQ"));
-        //    Assert.AreEqual(stockYHOO, portfolio.GetAssetByName("YHOO"));
+            Assert.AreEqual(stockIBM, portfolio.GetAssetByName("IBM"));
+            Assert.AreEqual(stockHP, portfolio.GetAssetByName("HPQ"));
+            Assert.AreEqual(stockYHOO, portfolio.GetAssetByName("YHOO"));
 
-        //    Assert.IsNull(portfolio.GetAssetByName("QQQQ"));
-        //}
+            //Assert.IsNull(portfolio.GetAssetByName("QQQQ"));
+        }
 
         //[TestMethod]
         //public void CanCompareByName()
@@ -87,12 +87,12 @@ namespace _10_Collections
         //    portfolio.AddAsset(stockIBM);
         //    portfolio.AddAsset(stockHP);
         //    portfolio.AddAsset(stockYHOO);
-            
+
         //    IList<Asset> stocks = portfolio.GetAssetsSortedByValue();
         //    Assert.AreEqual(stockYHOO, stocks[0]);
         //    Assert.AreEqual(stockHP, stocks[1]);
         //    Assert.AreEqual(stockIBM, stocks[2]);
-            
+
         //}
 
         //[TestMethod]
